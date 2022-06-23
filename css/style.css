@@ -1,0 +1,141 @@
+@import "../css/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: hsl(225deg, 100%, 94%) url("../img/pattern-background-desktop.svg") no-repeat;
+  background-size: 100% 42%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 1.5rem 18px hsl(225deg, 89%, 90%);
+  max-width: 90%;
+}
+main img {
+  width: 100%;
+  border-radius: 15px 15px 0% 0%;
+}
+main form {
+  width: 80%;
+}
+main form .btn-confirmar {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0rem 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: 0px 1.5rem 12px hsl(225deg, 100%, 94%);
+  cursor: pointer;
+}
+main form .btn-confirmar:active {
+  opacity: 0.7;
+}
+main form .btn-cancelar {
+  margin-bottom: 2rem;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+  font-size: 0.85rem;
+  background-color: white;
+  cursor: pointer;
+}
+main form .btn-cancelar:active {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.texto-ppal {
+  width: 70%;
+  padding: 3rem 0rem 1rem;
+}
+.texto-ppal h1 {
+  padding: 0rem 0rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.texto-ppal p {
+  color: hsl(224deg, 23%, 55%);
+  line-height: 140%;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  margin: 1rem 0rem;
+  width: 80%;
+  background-color: hsl(225deg, 100%, 98%);
+}
+.plan a {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 900;
+}
+.plan a:active {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.imagen_info {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  width: 50%;
+}
+.imagen_info img {
+  width: 5rem;
+}
+
+.info_plan .nombre_plan {
+  font-weight: 900;
+  margin-bottom: 0.7rem;
+}
+.info_plan .precio_plan {
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .texto-ppal {
+    width: 80%;
+    padding: 2rem 0rem 1rem;
+  }
+
+  .plan {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  main form {
+    width: 90%;
+  }
+
+  body {
+    background: hsl(225deg, 100%, 94%) url("../img/pattern-background-mobile.svg") no-repeat;
+    background-size: 100% auto;
+  }
+}/*# sourceMappingURL=style.css.map */
